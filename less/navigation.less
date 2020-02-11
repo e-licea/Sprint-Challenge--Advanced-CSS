@@ -1,1 +1,33 @@
 // Navigation code here
+
+.navcontainer{
+    .flex();
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    height: 80px;
+    .bg(@porcelain);
+    margin: 0 auto;
+  
+    width: 100%;
+    left: 50%;
+
+    @media @phone{
+        
+    }
+    h1{
+        .fz(3.7rem);
+
+    }
+    nav{
+        width: 70%;
+        padding-top: 2%;
+        .flex();
+        justify-content: space-evenly;
+        a{
+        .fz(1.3rem);
+        text-decoration: none;
+        color: @ebony-clay;
+        }
+    }// nav
+}// .navcontainer
