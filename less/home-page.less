@@ -3,6 +3,11 @@
 .home {
 
   .intro {
+    img{
+      .br(8px);
+      width: 100%;
+     
+    }
 
     h2 {
       padding: 15px;
@@ -19,6 +24,7 @@
     flex-wrap: wrap;
     width: 100%;
 
+    
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -58,6 +64,7 @@
       }
 
       .btn {
+        .bg(@ebony-clay);
       }
     }
 
@@ -73,3 +80,16 @@
     }
   }
 }// home
+
+@media @phone{
+  .home{
+    .space-images{
+      .flex();
+      flex-direction: column;
+      flex-wrap: wrap;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
